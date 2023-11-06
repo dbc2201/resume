@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 const routes: Routes = [
 	{
@@ -16,6 +17,10 @@ const routes: Routes = [
 	{
 		path: 'profile',
 		component: ProfileComponent,
+	},
+	{
+		path: 'experience',
+		component: ExperienceComponent,
 	},
 	{
 		path: '**',

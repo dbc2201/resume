@@ -9,7 +9,11 @@ import { CommonModule } from '@angular/common';
 	styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-	openProfile(): void {
+	openProfileComponent(): void {
 		window.open('/profile', '_blank');
+	}
+
+	openExperienceComponent(): void {
+		window.open('/experience', '_blank');
 	}
 }
