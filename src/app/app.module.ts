@@ -22,12 +22,11 @@ import { ContactComponent } from './contact/contact.component';
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
+		NgChartsModule,
 		HeaderComponent,
 		FooterComponent,
 		HomeComponent,
 		PageNotFoundComponent,
-		NgChartsModule,
-		ContactComponent,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
