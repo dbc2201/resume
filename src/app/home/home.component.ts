@@ -16,4 +16,8 @@ export class HomeComponent {
 	openExperienceComponent(): void {
 		window.open('/experience', '_blank');
 	}
+
+	downloadResume(): void {
+		window.open('../../assets/docs/resume.pdf', '_blank');
+	}
 }

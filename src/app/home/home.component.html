@@ -12,21 +12,76 @@
 				corporate professionals on various technologies and projects.
 			</p>
 			<div
-				class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+				class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 mt-3"
 			>
 				<button
 					type="button"
-					class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+					class="btn btn-outline-success btn-lg px-4 me-md-2 fw-bold"
 					(click)="openProfileComponent()"
 				>
-					Profile
+					<a class="link-dark icon-link text-dark-emphasis">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-person-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+							/>
+						</svg>
+						Profile
+					</a>
 				</button>
 				<button
 					type="button"
-					class="btn btn-outline-success btn-lg px-4 fw-semibold"
+					class="btn btn-outline-primary btn-lg px-4 fw-semibold"
 					(click)="openExperienceComponent()"
 				>
-					Experience
+					<a class="link-dark icon-link text-dark-emphasis">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-person-workspace"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+							/>
+							<path
+								d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"
+							/>
+						</svg>
+						Experience
+					</a>
+				</button>
+				<button
+					type="button"
+					class="btn btn-outline-warning btn-lg px-4 fw-semibold col"
+					(click)="downloadResume()"
+				>
+					<a class="link-dark icon-link text-dark-emphasis">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="16"
+							height="16"
+							fill="currentColor"
+							class="bi bi-download"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+							/>
+							<path
+								d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+							/>
+						</svg>
+						Download Resume
+					</a>
 				</button>
 			</div>
 		</div>
