@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
 	declarations: [AppComponent, ProfileComponent, ExperienceComponent],
@@ -19,12 +20,10 @@ import { ExperienceComponent } from './experience/experience.component';
 		FooterComponent,
 		HomeComponent,
 		PageNotFoundComponent,
+		NgChartsModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
-	exports: [
-    ProfileComponent,
-    ExperienceComponent
-  ],
+	exports: [ProfileComponent, ExperienceComponent],
 })
 export class AppModule {}
