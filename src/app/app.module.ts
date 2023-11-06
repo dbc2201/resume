@@ -10,9 +10,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { NgChartsModule } from 'ng2-charts';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-	declarations: [AppComponent, ProfileComponent, ExperienceComponent],
+	declarations: [
+		AppComponent,
+		ProfileComponent,
+		ExperienceComponent,
+		ContactComponent,
+	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
@@ -21,9 +27,10 @@ import { NgChartsModule } from 'ng2-charts';
 		HomeComponent,
 		PageNotFoundComponent,
 		NgChartsModule,
+		ContactComponent,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
-	exports: [ProfileComponent, ExperienceComponent],
+	exports: [ProfileComponent, ExperienceComponent, ContactComponent],
 })
 export class AppModule {}
