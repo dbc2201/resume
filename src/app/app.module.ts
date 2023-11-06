@@ -8,9 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
-	declarations: [AppComponent, ProfileComponent],
+	declarations: [AppComponent, ProfileComponent, ExperienceComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
@@ -22,7 +23,8 @@ import { ProfileComponent } from './profile/profile.component';
 	providers: [],
 	bootstrap: [AppComponent],
 	exports: [
-    ProfileComponent
+    ProfileComponent,
+    ExperienceComponent
   ],
 })
 export class AppModule {}
