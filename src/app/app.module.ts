@@ -7,9 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
-	declarations: [AppComponent],
+	declarations: [AppComponent, ProfileComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
@@ -20,6 +21,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 	],
 	providers: [],
 	bootstrap: [AppComponent],
-	exports: [],
+	exports: [
+    ProfileComponent
+  ],
 })
 export class AppModule {}
