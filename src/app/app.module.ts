@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { NgChartsModule } from 'ng2-charts';
 import { ContactComponent } from './contact/contact.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
 	declarations: [
@@ -18,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 		ProfileComponent,
 		ExperienceComponent,
 		ContactComponent,
+		SkillsComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -30,6 +32,11 @@ import { ContactComponent } from './contact/contact.component';
 	],
 	providers: [],
 	bootstrap: [AppComponent],
-	exports: [ProfileComponent, ExperienceComponent, ContactComponent],
+	exports: [
+		ProfileComponent,
+		ExperienceComponent,
+		ContactComponent,
+		SkillsComponent,
+	],
 })
 export class AppModule {}
